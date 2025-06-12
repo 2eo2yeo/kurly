@@ -1,3 +1,7 @@
+    /********************************************
+            작성자 : 정서령
+    ********************************************/   
+
 import React from 'react';
 
 export default function PaymentSummary({ totalPriceCal, totalPriceAll, totalPriceDc, discountAmount, icons }) {

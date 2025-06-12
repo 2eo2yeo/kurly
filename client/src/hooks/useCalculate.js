@@ -1,3 +1,8 @@
+    /********************************************
+            작성자 : 정서령
+    ********************************************/   
+
+
 import React, { useContext, useMemo } from "react";
 import { CartContext } from "../context/CartContext.js";
 

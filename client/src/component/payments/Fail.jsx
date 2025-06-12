@@ -1,3 +1,7 @@
+    /********************************************
+            작성자 : 정서령
+    ********************************************/   
+
 import { useSearchParams } from "react-router-dom";
 import '../../scss/payments.css';
 

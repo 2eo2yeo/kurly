@@ -1,3 +1,7 @@
+    /********************************************
+            작성자 : 정서령
+    ********************************************/   
+
 import React, { useState, useContext, useEffect } from 'react';
 import { CartContext } from "../../context/CartContext.js";
 import { useCart } from "../../hooks/useCart.js";

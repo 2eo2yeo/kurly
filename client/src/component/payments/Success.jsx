@@ -1,3 +1,7 @@
+    /********************************************
+            작성자 : 정서령
+    ********************************************/   
+
 import { useState, useContext, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { CartContext } from "../../context/CartContext.js";

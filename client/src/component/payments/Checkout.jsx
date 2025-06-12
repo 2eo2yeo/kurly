@@ -1,3 +1,7 @@
+    /********************************************
+            작성자 : 정서령
+    ********************************************/   
+
 import { useEffect, useRef, useState } from "react";
 import { loadTossPayments, ANONYMOUS } from "@tosspayments/tosspayments-sdk";
 import '../../scss/payments.css';
