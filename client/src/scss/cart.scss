@@ -643,16 +643,20 @@ body {
     }
 
 
-    .orderer-info-row div {
-        display: inline-flex;
-        align-items: flex-start;
-        line-height: 24px;
+    .orderer-info-row {
+        div {
+            display: inline-flex;
+            align-items: flex-start;
+            line-height: 24px;
+        }
     }
 
-    .order-info-email div {
-        display: block;
-        margin-top: 10px;
-        unicode-bidi: isolate;
+    .order-info-email {
+        div {
+            display: block;
+            margin-top: 10px;
+            unicode-bidi: isolate;
+        }
     }
 
     .delivery-content {
@@ -664,21 +668,23 @@ body {
         display: flex;
         flex-direction: column;
         gap: 15px;
+
+
+        .w-btn2 {
+            margin-top: 8px;
+        }
+
+        .line {
+            display: inline-block;
+            width: 1px;
+            height: 14px;
+            margin: 6px 8px 0px;
+            background-color: rgb(221, 221, 221);
+            box-sizing: border-box;
+        }
     }
 
 
-    .delivery-detail .w-btn2 {
-        margin-top: 8px;
-    }
-
-    .delivery-detail .line {
-        display: inline-block;
-        width: 1px;
-        height: 14px;
-        margin: 6px 8px 0px;
-        background-color: rgb(221, 221, 221);
-        box-sizing: border-box;
-    }
 
     .delivery-default {
         display: inline-block;
@@ -702,6 +708,48 @@ body {
         -webkit-box-pack: justify;
         justify-content: space-between;
         gap: 20px;
+
+        .coupon1 {
+            position: relative;
+            width: 100%;
+            height: 44px;
+            padding: 0px 54px 0px 16px;
+            border: 1px solid rgb(221, 221, 221);
+            font-size: 14px;
+            line-height: 20px;
+            text-align: left;
+            margin-bottom: 5px;
+            background: rgb(250, 250, 250);
+            color: rgb(204, 204, 204) !important;
+
+
+            span {
+                display: inline-block;
+                position: relative;
+                bottom: 2px;
+                width: 12px;
+                height: 8px;
+                background: url(data:image/svg+xml;charset=utf-8;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBmaWxsPSIjZGRkIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNSAwTDEwIDYgMCA2eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTkwOSAtMjAzNikgdHJhbnNsYXRlKDE5NSAxNzk2KSB0cmFuc2xhdGUoMCA2MCkgdHJhbnNsYXRlKDM3NiAxNjIpIHRyYW5zbGF0ZSgzMzggMTgpIHJvdGF0ZSgtMTgwIDUuNSAzLjUpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo=) 0px 0px no-repeat;
+                position: absolute;
+                top: 15px;
+                right: 16px;
+            }
+
+        }
+
+        .move {
+            display: inline-block;
+            width: 6px;
+            height: 9px;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgNiA5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDZ2OUgweiIvPgogICAgICAgIDxwYXRoIGQ9Ik0uNjQ3LjY0NmEuNS41IDAgMCAxIC42MzgtLjA1N2wuMDcuMDU4IDMuNDgzIDMuNWEuNS41IDAgMCAxIC4wNy42MmwtLjA2Mi4wNzgtMy4zMyAzLjVhLjUuNSAwIDAgMS0uNzgtLjYxOWwuMDU1LS4wNyAyLjk5NS0zLjE0OS0zLjE0LTMuMTU0QS41LjUgMCAwIDEgLjU4OS43MTVsLjA1OC0uMDd6IiBmaWxsPSIjNUYwMDgwIi8+CiAgICA8L2c+Cjwvc3ZnPgo=);
+            background-size: cover;
+            background-position: 50% 50%;
+            margin-left: 4px;
+        }
+
+        button {
+            padding: 0;
+        }
     }
 
 
@@ -714,54 +762,14 @@ body {
     }
 
 
-    .order-delivery-b .coupon1 {
-        position: relative;
-        width: 100%;
-        height: 44px;
-        padding: 0px 54px 0px 16px;
-        border: 1px solid rgb(221, 221, 221);
-        font-size: 14px;
-        line-height: 20px;
-        text-align: left;
-        margin-bottom: 5px;
-        background: rgb(250, 250, 250);
-        color: rgb(204, 204, 204) !important;
-    }
-
-    .coupon1 span {
-        display: inline-block;
-        position: relative;
-        bottom: 2px;
-        width: 12px;
-        height: 8px;
-        background: url(data:image/svg+xml;charset=utf-8;base64,CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTIiIGhlaWdodD0iOCIgdmlld0JveD0iMCAwIDEyIDgiPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBmaWxsPSIjZGRkIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNSAwTDEwIDYgMCA2eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTkwOSAtMjAzNikgdHJhbnNsYXRlKDE5NSAxNzk2KSB0cmFuc2xhdGUoMCA2MCkgdHJhbnNsYXRlKDM3NiAxNjIpIHRyYW5zbGF0ZSgzMzggMTgpIHJvdGF0ZSgtMTgwIDUuNSAzLjUpIi8+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPgo=) 0px 0px no-repeat;
-        position: absolute;
-        top: 15px;
-        right: 16px;
-    }
-
-
-    .order-delivery-b .move {
-        display: inline-block;
-        width: 6px;
-        height: 9px;
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgNiA5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDZ2OUgweiIvPgogICAgICAgIDxwYXRoIGQ9Ik0uNjQ3LjY0NmEuNS41IDAgMCAxIC42MzgtLjA1N2wuMDcuMDU4IDMuNDgzIDMuNWEuNS41IDAgMCAxIC4wNy42MmwtLjA2Mi4wNzgtMy4zMyAzLjVhLjUuNSAwIDAgMS0uNzgtLjYxOWwuMDU1LS4wNyAyLjk5NS0zLjE0OS0zLjE0LTMuMTU0QS41LjUgMCAwIDEgLjU4OS43MTVsLjA1OC0uMDd6IiBmaWxsPSIjNUYwMDgwIi8+CiAgICA8L2c+Cjwvc3ZnPgo=);
-        background-size: cover;
-        background-position: 50% 50%;
-        margin-left: 4px;
-    }
-
-    .order-delivery-b button {
-        padding: 0;
-    }
 
     .coupon-event {
         border-top: 1px solid rgb(244, 244, 244);
         margin-top: 20px;
-    }
 
-    .coupon-event img {
-        width: 500px;
+        img {
+            width: 500px;
+        }
     }
 
 
@@ -776,26 +784,26 @@ body {
         position: relative;
         vertical-align: center;
         margin-right: 8px;
-    }
 
-    .coupon-radio .radio-input {
-        display: none;
-        padding: 0;
-        margin: 0;
-    }
+        .radio-input {
+            display: none;
+            padding: 0;
+            margin: 0;
+        }
 
-
-    .coupon-radio .icon {
-        position: absolute;
-        top: 5px;
-        left: 0;
-        transition: opacity 0.3s ease;
-    }
+        .icon {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            transition: opacity 0.3s ease;
+        }
 
 
-    .coupon-radio .hidden {
-        opacity: 0;
-        pointer-events: none;
+        .hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
     }
 
 
@@ -819,56 +827,60 @@ body {
 
     .miles-left-row {
         padding-bottom: 8px;
+
+        span {
+            color: #b5b5b5;
+        }
     }
 
-    .miles-left span {
-        color: #b5b5b5;
-    }
 
     .miles-input {
         display: flex;
         column-gap: 8px;
         -webkit-box-align: center;
         align-items: center;
-    }
+
+        div {
+            color: rgb(204, 204, 204) !important;
+            background-color: rgb(250, 250, 250);
+            border-radius: 3px;
+            font-size: 14px !important;
+            width: 300px;
+            height: 44px;
+            padding: 0px 11px 1px 15px;
+            border-radius: 4px;
+            border: 1px solid rgb(221, 221, 221);
+            line-height: 42px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 0px 10px;
+            text-align: center;
+            width: 100px;
+            height: 44px;
+            border-radius: 3px;
+            color: #dddddd !important;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(221, 221, 221);
+            cursor: default;
+        }
 
 
-    .miles-input div {
-        color: rgb(204, 204, 204) !important;
-        background-color: rgb(250, 250, 250);
-        border-radius: 3px;
-        font-size: 14px !important;
-        width: 300px;
-        height: 44px;
-        padding: 0px 11px 1px 15px;
-        border-radius: 4px;
-        border: 1px solid rgb(221, 221, 221);
-        line-height: 42px;
-        box-sizing: border-box;
     }
 
-    .miles-input button {
-        padding: 0px 10px;
-        text-align: center;
-        width: 100px;
-        height: 44px;
-        border-radius: 3px;
-        color: #dddddd !important;
-        background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(221, 221, 221);
-        cursor: default;
-    }
 
     .miles-description {
         margin-top: 10px;
+
+        p {
+            font-size: 12px !important;
+            font-weight: 400 !important;
+            line-height: 16px;
+            color: #666666 !important;
+        }
     }
 
-    .miles-description p {
-        font-size: 12px !important;
-        font-weight: 400 !important;
-        line-height: 16px;
-        color: #666666 !important;
-    }
 
 
     /* 결제 수단  */
@@ -880,38 +892,38 @@ body {
 
     /** 개인정보 */
 
-.privacy-policy {
-  margin: 0 0 20px;
-  padding: 20px 0;
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgb(244, 244, 244);
+    .privacy-policy {
+        margin: 0 0 20px;
+        padding: 20px 0;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(244, 244, 244);
 
-  .flex:not(:first-of-type) {
-    padding-top: 12px;
-  }
+        .flex:not(:first-of-type) {
+            padding-top: 12px;
+        }
 
-  p {
-    padding-top: 20px;
-  }
+        p {
+            padding-top: 20px;
+        }
 
-  button {
-    color: rgb(153, 153, 153) !important;
-    text-decoration: underline;
-  }
-}
+        button {
+            color: rgb(153, 153, 153) !important;
+            text-decoration: underline;
+        }
+    }
 
-.privacy-policy-des {
-  color: #666666 !important;
-  font-size: 12px !important;
+    .privacy-policy-des {
+        color: #666666 !important;
+        font-size: 12px !important;
 
-  &::before {
-    color: #666666 !important;
-    display: inline-block;
-    width: 16px;
-    content: "※";
-    font-size: 12px;
-  }
-}
+        &::before {
+            color: #666666 !important;
+            display: inline-block;
+            width: 16px;
+            content: "※";
+            font-size: 12px;
+        }
+    }
 
 
     /* 결제 창 아래 오른쪽**/
