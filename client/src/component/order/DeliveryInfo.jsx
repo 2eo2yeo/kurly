@@ -10,7 +10,7 @@ export default function DeliveryInfo({ userInfo }) {
 
     return (
         <>
-            <div className='order-page-title'>
+            <div className=''>
                 <p className='f20 w500'>배송정보</p>
             </div>
             <div className='delivery-content flex'>

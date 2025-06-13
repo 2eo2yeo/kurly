@@ -77,7 +77,7 @@ export default function Postcode() {
     };
 
     return (
-        <div className='c-layout' style={{ padding: "5px" }}>
+        <div className='cart-wrap' style={{ padding: "5px" }}>
             <p className='f18 w600'>배송지 관리</p>
             <div>
                 <span className='delivery-default' style={{ margin: "15px 0 0px 0" }} >기본배송지</span>

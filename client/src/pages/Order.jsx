@@ -21,7 +21,7 @@ import OrderInfo from '../component/order/OrderInfo.jsx';
 
 export default function Order() {
 
-  const { orderList, userInfo, setUserInfo } = useContext(OrderContext);
+  const { orderList, userInfo } = useContext(OrderContext);
   const { totalPriceAll, totalPriceDc, totalPriceCal } = useCalculate();
   const { getUserInfo, getOrderList } = useOrder();
   const { getCartList } = useCart();

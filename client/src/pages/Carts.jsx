@@ -151,9 +151,9 @@ export default function Carts() {
     }
 
     return (
-        <div className='c-layout g-full'>
+        <div className='cart-wrap g-full'>
             <p className='c-title'>장바구니</p>
-            <div className='c-content'>
+            <div className='cart-content'>
                 <div className='cart-left-side '>
                     <SelectAll
                         CheckBox={CheckBox}
@@ -168,10 +168,11 @@ export default function Carts() {
                     <div className='cart-product w-full'>
                         <div className='cart-product-top'>
                             <CheckBox checked={allChecked} onChange={handleAllCheck} />
-                            <p className='f18 w600'>샛별배송</p>
+                            <p>샛별배송</p>
                         </div>
-                        <ul className='cart-product-list'> {/* 상품리스트 반복 */}
-                            {
+                         {/* 상품리스트 반복 */}
+                        <ul>
+                            { // 상품별 보관 방식
                                 changePackaging && changePackaging.map((item, index) =>
                                     <div className='cart-product-pacakaging' key={`${item}-${index}`} >
                                         <Packaging packaging={item} />
@@ -228,7 +229,7 @@ export default function Carts() {
 
 
                     {/* 오른쪽 결제정보 */}
-                    <div className='payment w-full'>
+                    <div className='right-payment w-full'>
                         <p className='f18'>결제금액</p>
                         <div className='flex space-between margin1200 '>
                             <p>상품금액</p>

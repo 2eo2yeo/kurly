@@ -12,8 +12,8 @@ export default function SelectAll({ CheckBox, checked, onChange, deleteCheckedIt
   };
 
   return (
-    <div className='cart-header w-full'>
-      <div className='cart-select-all'>
+    <div className='space-between w-full'>
+      <div className='flex'>
         <CheckBox checked={checked} onChange={onChange} />
         <p className='f16 margin00016'>전체선택</p>
       </div>
