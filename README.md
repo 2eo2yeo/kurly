@@ -1,4 +1,4 @@
-### <div align=center>![header](https://capsule-render.vercel.app/api?type=waving&color=0:672092,100:ECCDFF&width=1000&height=200&section=header&text=Kurly%20Clone%20Cording%20Team%20Project&fontSize=30&fontColor=FFFFFF&fontAlignY=35)</div>
+### <div align=center>![header](https://capsule-render.vercel.app/api?type=waving&color=0:672092,100:ECCDFF&width=1000&height=200&section=header&text=Kurly%20Team%20Project&fontSize=30&fontColor=FFFFFF&fontAlignY=35)</div>
 
 
 ## 프로젝트 소개
